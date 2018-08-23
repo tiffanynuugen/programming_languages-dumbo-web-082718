@@ -4,11 +4,11 @@ require 'pry'
    new_hash = {}
    languages.each do |style, hash|
     description.each do |name, attribute|
-      if new_hash.has_key?(lang)
-        new_hash[lang][:style] << style
+      if new_hash.has_key?(name)
+        new_hash[name][:style] << style
       else
-        new_hash[lang] = type
-        new_hash[lang][:style] = [style]
+        new_hash[name] = type
+        new_hash[name][:style] = [style]
       end
     end
   end
