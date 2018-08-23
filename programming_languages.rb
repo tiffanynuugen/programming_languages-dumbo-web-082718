@@ -1,6 +1,6 @@
 require 'pry'
 
- def reformat_languages(languages)	
+ def reformat_languages(languages)
    languages.each do |style, description|
     description.each do |lang, type|
       binding.pry
