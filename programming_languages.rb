@@ -6,7 +6,7 @@ require 'pry'
       if new_hash.has_key?(lang)
         new_hash[lang][:style] << style
       else
-        new_hash[lang][:type] = type
+        new_hash[lang] = type
         new_hash[lang][:style] = [style]
       end
     end
