@@ -3,7 +3,7 @@ require 'pry'
  def reformat_languages(languages)
    new_hash = {}
    languages.each do |style, hash|
-    description.each do |name, attribute|
+    hash.each do |name, attribute|
       binding.pry
       if new_hash.has_key?(name)
         new_hash[name][:style] << style
