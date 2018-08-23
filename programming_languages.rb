@@ -1,6 +1,6 @@
 require 'pry'
 
- def reformat_languages(languages)	
+ def reformat_languages(languages)
   new_hash = {}
    languages.each do |style, description|
     description.each do |lang, type|
@@ -12,5 +12,5 @@ require 'pry'
       end
     end
   end
-   new_hash  
+   new_hash
 end
